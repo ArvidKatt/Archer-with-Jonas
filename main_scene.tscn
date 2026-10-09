@@ -1,9 +1,15 @@
 [gd_scene format=3 uid="uid://cdmpbrrwm4sck"]
 
 [ext_resource type="Texture2D" uid="uid://2goq6peeus48" path="res://map.png" id="1_0f027"]
+[ext_resource type="Texture2D" uid="uid://bdvgxm8b4vw8e" path="res://girl_bow-removebg-preview.png" id="2_2c62f"]
+[ext_resource type="Script" uid="uid://cvngh3hjxhs7g" path="res://sprite_2d.gd" id="4_d5x1h"]
 
 [node name="Node2D" type="Node2D" unique_id=1021398151]
 
 [node name="Map" type="Sprite2D" parent="." unique_id=199183451]
 position = Vector2(350, 200)
 texture = ExtResource("1_0f027")
+
+[node name="Sprite2D" type="Sprite2D" parent="Map" unique_id=1811237621]
+texture = ExtResource("2_2c62f")
+script = ExtResource("4_d5x1h")
