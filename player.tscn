@@ -1,0 +1,23 @@
+[gd_scene format=3 uid="uid://dakhkmx3qe7fd"]
+
+[ext_resource type="Script" uid="uid://dq3v87aollo3m" path="res://character_body_2d.gd" id="1_i3pqv"]
+[ext_resource type="Texture2D" uid="uid://bdvgxm8b4vw8e" path="res://girl_bow-removebg-preview.png" id="2_hqtel"]
+[ext_resource type="Texture2D" uid="uid://jx7xw37hllqy" path="res://bow_uncharged.png" id="3_sweqy"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_pvlfs"]
+size = Vector2(167, 335)
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1155692937]
+script = ExtResource("1_i3pqv")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=2055778962]
+texture = ExtResource("2_hqtel")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=230956282]
+position = Vector2(-69.5, -2.5)
+shape = SubResource("RectangleShape2D_pvlfs")
+
+[node name="Sprite2D2" type="Sprite2D" parent="." unique_id=1688060225]
+position = Vector2(143, -6.999998)
+scale = Vector2(4.2708325, 5.125)
+texture = ExtResource("3_sweqy")
